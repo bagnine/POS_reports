@@ -4,11 +4,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import xlsxwriter
 
-summary = pd.read_csv('Sales_Summary_catfish-bar-and-restaurant_2020-10-06_11-00_2020-10-25_11-00.csv')
-pmix = pd.read_csv('Product_Mix_catfish-bar-and-restaurant_2020-10-06_11-00_2020-10-25_11-00.csv')
-hourly = pd.read_csv('Hourly_Sales_catfish-bar-and-restaurant_2020-10-06_11-00_2020-10-25_11-00.csv')
-emp_prof = pd.read_csv('Employee_Profit_catfish-bar-and-restaurant_catfish-bar-and-restaurant_2020-10-06_2020-10-25.csv')
-labor = pd.read_csv('Labor_catfish-bar-and-restaurant_catfish-bar-and-restaurant_2020-10-06_2020-10-25.csv')
+summary = pd.read_csv('Sales_Summary_restaurant_2020-10-06_11-00_2020-10-25_11-00.csv')
+pmix = pd.read_csv('Product_Mix_restaurant_2020-10-06_11-00_2020-10-25_11-00.csv')
+hourly = pd.read_csv('Hourly_Sales_restaurant_2020-10-06_11-00_2020-10-25_11-00.csv')
+emp_prof = pd.read_csv('Employee_Profit_restaurant_2020-10-06_2020-10-25.csv')
+labor = pd.read_csv('Labor_restaurant_2020-10-06_2020-10-25.csv')
 
 def category(df, category):
     a = df.iloc[np.where(df['Product Category'] == category)]
